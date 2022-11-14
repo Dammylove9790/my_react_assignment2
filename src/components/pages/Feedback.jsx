@@ -1,29 +1,31 @@
 import React from "react";
 
+
 const iframeStyle= {
   width:"80%",
-  height:"450px",
-  style:"border:0;",
-  allowfullscreen:"",
-  loading:"lazy",
-  referrerpolicy:"no-referrer-when-downgrade"
+  height:"1200",
+  frameborder:"0",
+  marginheight:"0",
+  marginwidth:"0",
 }
 
 
-function About() {
+function Feedback() {
   return (
     <div id="rightColumn" class="column1">
       <div id="innerColumn1" class="innerColumn1NoNews">
         <div class="schoolContent">
           <div class="contentHeader">
-            <span>Locate Us</span>
+            <span>Submit a Feedback</span>
           </div>
           <br />
           <br />
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9398.826351305524!2d4.314783074711914!3d7.924318605132834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037790ac425f1ed%3A0x7ec191b5e759de1d!2sTitilope%20Schools!5e0!3m2!1sen!2sng!4v1655728825117!5m2!1sen!2sng"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdkvIuH97nhL87UnlY2NG2bTXpyOSMrVefH_dQFgjOXdefy8g/viewform?embedded=true"
             style = {iframeStyle}
-          ></iframe>
+          >
+            Loading…
+          </iframe>
         </div>
         <br />
         <hr />
@@ -66,4 +68,4 @@ function About() {
   );
 }
 
-export default About;
+export default Feedback;

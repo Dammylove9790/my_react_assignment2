@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* clear: both; */
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clear{
+    clear: both;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+    color: green; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: orangered;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h4{
+    text-align: center;
+    margin-bottom: 15px;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+hr{
+    height: 5px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: justify;
+    font-size: large;
+    line-height: 25px;
+}
+
+
+#header{
+    background: url("../oicImages/school2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    height: 300px;
+}
+
+.contentHeader{
+    text-align: center;
+}
+
+.contentHeader span {
+    font-size: 25px; 
+    padding: 10px 20px;
+    background-color: black; 
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profileStyle {
+    float: left;
+    padding: 10px;
+}
+
+.profileStyle p{
+    text-align: justify;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+}
+
+.news {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+
+#mainNav {
+    width: 100%;
+    height: 60px;
+    background-color: green;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: inset 0 0 40px black;
+    /* box-shadow: 0 0 25px rgb(7, 7, 7); */
+    color: white;
+}
+
+.nav{
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav .mobileScreen{
+    padding: 0 10px;
+    height: 60px;
+    display: none;
+}
+
+.nav .mobileScreen .mobileScreenFlex {
+    display: flex;
+}
+
+.nav .mobileScreen .mobileScreenFlex .tichs {
+    width: 70%;
+    display: flex;
+    
+    /* position: absolute; 
+    left: 20px; 
+    line-height: 9vh; */
+}
+
+.nav .mobileScreen .mobileScreenFlex .menuSpace {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    /* position: absolute; 
+    right: 20px; 
+    line-height: 9vh;
+    width: 200px; */
+}
+
+/* .nav .mobileScreen .mobileScreenFlex .menuSpace .menuIcon{
+    width: 50px; 
+    height: 50px;
+    padding: 7px 0; 
+    border-radius: 50px; 
+    background-color: white; 
+    float: right;
+} */
+
+.nav .mobileScreen .mobileScreenFlex h1 {
+    margin: 10px;
+    color:white;
+    font-size: 30px;
+    text-align: left;
+    text-shadow: 0 0 6px red;
+}
+
+/* .nav .mobileScreen .mobileScreenFlex .menuSpace .menuIcon .menuLine{
+    height: 5px;
+    margin: 5px 10px;
+    background-color: black;
+} */
+
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li{
+    display: inline-block;
+}
+
+.nav ul li a{
+    display: block;
+    color: white;
+    /* font-size: 20px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav ul li:hover > a{
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav ul ul{
+    float: none;
+    position: absolute;
+    text-align: left;
+    border: 1.5px solid green;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    display: none;
+}
+
+.nav ul ul li{
+    display: block;
+}
+
+.nav ul li:hover ul{
+    display: block;
+}
+
+.nav ul ul li a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    /* font-size: 18px; */
+    text-transform: capitalize;
+    border-bottom: 1px dashed green;
+}
+
+.nav ul ul li:last-of-type a{
+    border-radius: 0 0 20px 20px;
+    border: 0;
+}
+
+.nav ul ul li a:hover{
+    color: white;
+    transition: 0.5s ease-in-out;
+    background-color: green;
+    box-shadow: inset 0 0 40px black;
+}
+
+.li-drop img{
+    height: 20px;
+    padding-top: 5px;
+}
+
+.sideNav a{
+    display: block;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    padding:0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px dashed green;;
+}
+
+.sideNav a:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: green;
+    box-shadow: inset 0 0 40px black;
+}
+
+#leftColumn{
+    width: 18%;
+    height: 90vh;
+    padding: 30px 0;
+    position: sticky;
+    top: 60px;
+    background-color: rgb(205, 211, 205);
+    float: left;
+}
+
+#rightColumn{
+    width: 82%;
+    float: left;
+}
+
+.rightColumnRow1{
+    display: flex;
+}
+
+.innerColumn1 {
+    width: 75%;
+    padding: 50px 20px;
+    /* float: left; */
+}
+
+.innerColumn2 {
+    width: 25%;
+    padding: 50px 0;
+    background-color: rgb(239, 239, 239);
+    /* float: left; */
+}
+
+.innerColumnNews {
+    width: 100%;
+    padding: 0 20px;
+    border-left: 2px solid green;
+}
+
+.innerColumn1NoNews {
+    text-align: center;
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.innerColumn2 marquee{
+    height: 650px;
+}
+
+.schoolContent{
+    margin-bottom: 40px;
+}
+
+.tigsImage{
+    width: 44%;
+    padding: 10px;
+    margin: 20px 3%;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 0 0 15px orangered;
+}
+
+.facebookIcon {
+    color: blue;
+}
+
+.twitterIcon {
+    color: rgb(0, 145, 255);
+}
+
+.instagramIcon {
+    color: rgb(148, 4, 4);
+}
+
+.whatsappIcon {
+    color: green;
+}
+
+.tigsImage .tigsContent {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.tigsImageNoNews{
+    width: 29%;
+    padding: 10px;
+    margin: 30px 2%;
+    float: left;
+}
+
+.tigsImageNoNews > .tigsContent{
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px orangered;
+}
+
+.tigsImageNoNews > p{
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+
+.tigsImage img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+
+#footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(202, 210, 202);
+    padding: 30px;
+    text-align: center;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footerCol {
+    float: left;
+    width: 25%;
+    padding: 15px 0 15px px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.footerCol h4 {
+    text-align: left;
+}
+
+.footerCol p {
+    text-align: left;
+    font-size: medium;
+    line-height: 200%;
+}
+
+.footerRow {
+    padding-top: 20px;
+    width: 100%;
+    clear: both;
+}
+
+.footerCol a:hover{
+    color: red;
+}
+
+@media (max-width:600px){
+    .nav .mobileScreen{
+        display: block;
+    }
+        
+    div#leftColumn.column1, .nav1{
+        display:none;
+    }
+    
+    div#rightColumn.column1 {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 25px;
+    }
+
+    .nav ul li a{
+        font-size: x-small;
+    }
+
+    .nav ul li{
+        margin: 0 -5px;
+    }
+    
+    .sideNav a{
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #leftColumn.column1{
+        width: 30%;
+    }
+    
+    #rightColumn.column1{
+        width: 70%;
+    }
+
+    .rightColumnRow1{
+        display: block;
+    }
+    
+    .innerColumn1, .innerColumn2{
+        /* float: none; */
+        width: 100%;
+    }
+
+    .studentInfo{
+        text-align: center;
+    }
+
+    div.tigsImage{
+        width: 94%;
+        float: none;
+    }
+
+    #footer{
+        height: 550px;
+    }    
+
+    .footerCol{
+        width: 50%;
+        padding: 20px 0 20px 60px;
+    }
+}
+    
+@media (max-width:1100px){
+    a{
+        font-size: small;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .nav ul li a{
+        padding: 0 25px;
+    }
+    
+    .sideNav a{
+        height: 60px;
+        line-height: 60px;
+    }
+    #leftColumn.column1{
+        width: 25%;
+    }
+    
+    #rightColumn.column1{
+        width: 75%;
+    }
+
+    .studentInfo{
+        text-align: center;
+    }
+}
+
