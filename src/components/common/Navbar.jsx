@@ -34,7 +34,7 @@ function Navbar() {
                     
                     <ul class="nav2">
                         <li class="name"><Link to="/studentdashboard">Student Portal</Link></li>
-                        <li><Link to="#">Staff Portal</Link></li>
+                        <li><Link to="#">Staff Portal</Link></li>so
                     </ul>
                 </li>
                 <li><Link to="/about">About Us</Link></li>

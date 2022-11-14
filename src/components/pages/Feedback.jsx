@@ -3,8 +3,8 @@ import React from "react";
 
 const iframeStyle= {
   width:"80%",
-  height:"1200",
-  frameborder:"0",
+  height:"1200px",
+  border:"0px",
   marginheight:"0",
   marginwidth:"0",
 }

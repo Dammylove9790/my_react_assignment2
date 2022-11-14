@@ -3,7 +3,7 @@ import React from 'react'
 const iframeStyle= {
   width:"80%",
   height:"450px",
-  style:"border:0;",
+  border:"0px",
   allowfullscreen:"",
   loading:"lazy",
   referrerpolicy:"no-referrer-when-downgrade"
